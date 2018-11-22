@@ -5,22 +5,20 @@
 
 int main(int argc, char *argv[]) {
 	
-	char src[100]= "Programming course";
-	//char dst[100];
-	int i=0;
+	FILE *fp;
+	char input[100];
+	int i;
 	
-	while ( src[i] !='\0')
+	fp = fopen("sample.txt","w");
+	 
+	for(i=0; i<3; i++)
 	{
-		//dst[i] = src[i];
-		i++;
+		printf("input a word : ");
+		scanf("%s",input);
+		fprintf(fp,"%s\n",input);
 	}
-	//dst[i]='\0'; //(문자열을 끝냄. 꼭써야함.)
 	
-	
-	
-	//printf("dst : %s\n",dst);
-	printf("%s (%i)\n",src,i);
-	
+	fclose(fp);
 	
 	return 0;
 }
