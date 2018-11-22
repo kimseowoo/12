@@ -6,19 +6,20 @@
 int main(int argc, char *argv[]) {
 	
 	char src[100]= "Programming course";
-	char dst[100];
+	//char dst[100];
 	int i=0;
 	
 	while ( src[i] !='\0')
 	{
-		dst[i] = src[i];
+		//dst[i] = src[i];
 		i++;
 	}
-	dst[i]='\0'; //(문자열을 끝냄. 꼭써야함.)
+	//dst[i]='\0'; //(문자열을 끝냄. 꼭써야함.)
 	
 	
 	
-	printf("dst : %s\n",dst);
+	//printf("dst : %s\n",dst);
+	printf("%s (%i)\n",src,i);
 	
 	
 	return 0;
